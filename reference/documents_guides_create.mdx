@@ -1,0 +1,92 @@
+---
+title: "/api/v3/documents/guides"
+description: "post https://delivery.99minutos.com/api/v3/documents/guides"
+---
+| time | status | user agent |     |
+| --- | --- | --- | --- |
+| Make a request to see history. |     |     |     |
+
+#### URL Expired
+
+The URL for this request expired after 30 days.
+
+guides
+
+array of objects
+
+required
+
+guides\*
+
+ADD object
+
+# 200
+
+object
+
+message
+
+string
+
+required
+
+traceId
+
+string
+
+required
+
+data
+
+array of objects
+
+required
+
+data\*
+
+object
+
+id
+
+string
+
+required
+
+pdf
+
+string
+
+required
+
+
+
+ShellNodeRubyPHPPython
+
+Base URL
+
+https://delivery.99minutos.com/api/v3/documents/guides
+
+xxxxxxxxxx
+
+1
+
+curl \--request POST \\
+
+2
+
+     \--url https://delivery.99minutos.com/api/v3/documents/guides \\
+
+3
+
+     \--header 'accept: application/json' \\
+
+4
+
+     \--header 'content-type: application/json'
+
+Click `Try It!` to start a request and see the response here! Or choose an example:
+
+application/json
+
+200 - return guides response
+
