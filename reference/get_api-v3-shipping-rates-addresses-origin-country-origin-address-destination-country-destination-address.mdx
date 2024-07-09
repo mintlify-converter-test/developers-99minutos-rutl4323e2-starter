@@ -1,0 +1,92 @@
+---
+title: "Rates by Address"
+description: "get https://delivery.99minutos.com/api/v3/shipping/rates/addresses/{origin_country}/{origin_address}/{destination_country}/{destination_address}"
+---
+| time | status | user agent |     |
+| --- | --- | --- | --- |
+| Make a request to see history. |     |     |     |
+
+#### URL Expired
+
+The URL for this request expired after 30 days.
+
+destination\_address
+
+string | null
+
+required
+
+Destination address
+
+destination\_country
+
+string | null
+
+required
+
+Country of destination address
+
+origin\_address
+
+string | null
+
+required
+
+Origin address
+
+origin\_country
+
+string | null
+
+required
+
+Country of origin address
+
+cash\_on\_delivery
+
+number
+
+Cash on delivery amount
+
+delivery\_type
+
+string
+
+DeliveryType of the shipments. Refers to allowed values in the shipment schema detailed above.
+
+SMDSPT99MCO2FRETNALP2P
+
+insurance
+
+number
+
+size
+
+string
+
+Package size
+
+200
+
+OK
+
+
+
+ShellNodeRubyPHPPython
+
+Base URL
+
+https://delivery.99minutos.com/api/v3/shipping/rates/addresses/{origin\_country}/{origin\_address}/{destination\_country}/{destination\_address}
+
+xxxxxxxxxx
+
+1
+
+curl \--request GET \\
+
+2
+
+     \--url https://delivery.99minutos.com/api/v3/shipping/rates/addresses/origin\_country/origin\_address/destination\_country/destination\_address
+
+Click `Try It!` to start a request and see the response here!
+
