@@ -1,0 +1,78 @@
+---
+title: "Get arrival orders"
+description: "get http://{{fulfillment_url}}/api/v1/arrival-orders"
+---
+#### URL Expired
+
+The URL for this request expired after 30 days.
+
+page
+
+integer
+
+search
+
+string
+
+It is used when you want to find a text within the values of the fields: "orders.aoNumber".
+
+filters\[inventoryStatus\]\[\]
+
+string
+
+It is used when you want to find a specific state in the field "orders.products.inventoryStatus". Example: not\_received
+
+filters\[status\]\[\]
+
+string
+
+It is used when you want to find a specific state in the field "orders.status". Example: pending
+
+Content-Type
+
+string
+
+Accept
+
+string
+
+# 200OK
+
+string
+
+# 404Not Found
+
+object
+
+
+
+ShellNodeRubyPHPPython
+
+Base URL
+
+http://fulfillment\_url/api/v1/arrival-orders
+
+xxxxxxxxxx
+
+1
+
+curl \--request GET \\
+
+2
+
+     \--url http:///%7Bfulfillment\_url%7D/api/v1/arrival-orders \\
+
+3
+
+     \--header 'accept: text/plain'
+
+Click `Try It!` to start a request and see the response here! Or choose an example:
+
+text/plain
+
+200
+
+application/json
+
+404 - Error response - Not found
+
