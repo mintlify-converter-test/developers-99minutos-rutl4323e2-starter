@@ -1,0 +1,96 @@
+---
+title: "/api/v3/oauth/token"
+description: "post https://delivery.99minutos.com/api/v3/oauth/token"
+---
+| time | status | user agent |     |
+| --- | --- | --- | --- |
+| Make a request to see history. |     |     |     |
+
+#### URL Expired
+
+The URL for this request expired after 30 days.
+
+client\_id
+
+string
+
+required
+
+Client identifier granted for 99minutos.
+
+client\_secret
+
+string
+
+required
+
+# 200
+
+object
+
+access\_token
+
+string
+
+required
+
+Json web token
+
+expires\_in
+
+integer
+
+required
+
+jwt expires in seconds
+
+token\_type
+
+string
+
+required
+
+Defaults to bearer
+
+Token type
+
+traceId
+
+string
+
+required
+
+Serial for help us to tracking request
+
+
+
+ShellNodeRubyPHPPython
+
+Base URL
+
+https://delivery.99minutos.com/api/v3/oauth/token
+
+xxxxxxxxxx
+
+1
+
+curl \--request POST \\
+
+2
+
+     \--url https://delivery.99minutos.com/api/v3/oauth/token \\
+
+3
+
+     \--header 'accept: application/json' \\
+
+4
+
+     \--header 'content-type: application/json'
+
+Click `Try It!` to start a request and see the response here! Or choose an example:
+
+application/json
+
+200 - Example success response
+
