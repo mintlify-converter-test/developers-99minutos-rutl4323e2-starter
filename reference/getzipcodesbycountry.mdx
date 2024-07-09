@@ -1,0 +1,98 @@
+---
+title: "/api/v3/coverage/zipcodes/{country}"
+description: "get https://delivery.99minutos.com/api/v3/coverage/zipcodes/{country}"
+---
+#### URL Expired
+
+The URL for this request expired after 30 days.
+
+country
+
+string
+
+required
+
+Filter for search postal codes
+
+MEX
+
+deliveryType
+
+string
+
+required
+
+delivery types with postal codes
+
+RETNXD
+
+limit
+
+integer
+
+required
+
+Limit of codes by page
+
+page
+
+integer
+
+required
+
+Page
+
+# 200
+
+object
+
+codes
+
+array of strings
+
+codes
+
+metadata
+
+object
+
+page
+
+string
+
+limit
+
+string
+
+totalPages
+
+string
+
+
+
+ShellNodeRubyPHPPython
+
+Base URL
+
+https://delivery.99minutos.com/api/v3/coverage/zipcodes/{country}
+
+xxxxxxxxxx
+
+1
+
+curl \--request GET \\
+
+2
+
+     \--url 'https://delivery.99minutos.com/api/v3/coverage/zipcodes/MEX?deliveryType=RET' \\
+
+3
+
+     \--header 'accept: application/json'
+
+Click `Try It!` to start a request and see the response here! Or choose an example:
+
+application/json
+
+200 - return postal codes response
+
