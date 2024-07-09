@@ -1,0 +1,64 @@
+---
+title: "/api/v3/orders/{orderid}/confirm"
+description: "post https://delivery.99minutos.com/api/v3/orders/{orderid}/confirm"
+---
+#### URL Expired
+
+The URL for this request expired after 30 days.
+
+orderid
+
+string
+
+required
+
+orderId of the order that will be confirmed
+
+# 200OK
+
+object
+
+traceId
+
+string
+
+message
+
+string
+
+data
+
+object
+
+errors
+
+object
+
+
+
+ShellNodeRubyPHPPython
+
+Base URL
+
+https://delivery.99minutos.com/api/v3/orders/{orderid}/confirm
+
+xxxxxxxxxx
+
+1
+
+curl \--request POST \\
+
+2
+
+     \--url https://delivery.99minutos.com/api/v3/orders/orderid/confirm \\
+
+3
+
+     \--header 'accept: application/json'
+
+Click `Try It!` to start a request and see the response here! Or choose an example:
+
+application/json
+
+200 - Order confirmed
+
