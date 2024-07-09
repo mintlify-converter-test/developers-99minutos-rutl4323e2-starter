@@ -1,0 +1,156 @@
+---
+title: "/api/v3/locations"
+description: "post https://delivery.99minutos.com/api/v3/locations"
+---
+#### URL Expired
+
+The URL for this request expired after 30 days.
+
+addresses
+
+array of strings
+
+required
+
+addresses\*
+
+ADD string
+
+city
+
+string
+
+required
+
+country
+
+string
+
+required
+
+# 200
+
+object
+
+message
+
+string
+
+required
+
+traceId
+
+string
+
+required
+
+data
+
+array of objects
+
+required
+
+data\*
+
+object
+
+address
+
+string
+
+required
+
+String address of the location
+
+latitude
+
+string
+
+required
+
+Lattitude of the location
+
+longitude
+
+string
+
+required
+
+Longitude of the location
+
+locationId
+
+string
+
+required
+
+Unique uuid for the location. This id can be used to refer an origin or destination in the order creation endpoint.
+
+locationType
+
+string
+
+required
+
+p99\_network if the location belongs to our network of points 99 or private if is a private address outside of p99\_network.
+
+`p99_network` `private`
+
+geoType
+
+string
+
+required
+
+next
+
+uri
+
+required
+
+previous
+
+uri
+
+required
+
+errors
+
+object
+
+required
+
+Has additional fields
+
+
+
+ShellNodeRubyPHPPython
+
+Base URL
+
+https://delivery.99minutos.com/api/v3/locations
+
+xxxxxxxxxx
+
+1
+
+curl \--request POST \\
+
+2
+
+     \--url https://delivery.99minutos.com/api/v3/locations \\
+
+3
+
+     \--header 'accept: application/json' \\
+
+4
+
+     \--header 'content-type: application/json'
+
+Click `Try It!` to start a request and see the response here! Or choose an example:
+
+application/json
+
+200 - Location response
+
