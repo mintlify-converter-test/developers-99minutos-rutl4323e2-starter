@@ -1,0 +1,172 @@
+---
+title: "Create multibox orders"
+description: "post https://sandbox.99minutos.com/api/v1/orders/multibox"
+---
+| time | status | user agent |     |
+| --- | --- | --- | --- |
+| Make a request to see history. |     |     |     |
+
+#### URL Expired
+
+The URL for this request expired after 30 days.
+
+apikey
+
+string
+
+API key for authentication
+
+deliveryType
+
+string
+
+Type of delivery
+
+nextdaytaylormadesamedaynextdaynxdspttlmsmd
+
+packageSize
+
+string
+
+Size of the package
+
+lxssmlxl
+
+notes
+
+string
+
+Additional notes
+
+packages
+
+integer
+
+Number of packages
+
+cashOnDelivery
+
+boolean
+
+Whether cash on delivery is enabled
+
+truefalse
+
+amountCash
+
+float
+
+Amount for cash on delivery
+
+SecurePackage
+
+boolean
+
+Whether secure package is enabled
+
+truefalse
+
+amountSecure
+
+float
+
+Amount for secure package
+
+receivedId
+
+string
+
+Identifier for the received order
+
+origin
+
+object
+
+origin object
+
+destination
+
+object
+
+destination object
+
+# 201Success
+
+object
+
+code
+
+integer
+
+data
+
+array of objects
+
+data
+
+object
+
+counter
+
+integer
+
+trackingid
+
+string
+
+clienid
+
+string
+
+receivedId
+
+string
+
+created
+
+date-time
+
+trace\_id
+
+string
+
+# 400Bad Request
+
+BadRequestResponse1
+
+BadRequestResponse2
+
+BadRequestResponse3
+
+
+
+ShellNodeRubyPHPPython
+
+Base URL
+
+https://sandbox.99minutos.com/api/v1/orders/multibox
+
+xxxxxxxxxx
+
+1
+
+curl \--request POST \\
+
+2
+
+     \--url https://sandbox.99minutos.com/api/v1/orders/multibox \\
+
+3
+
+     \--header 'accept: application/json' \\
+
+4
+
+     \--header 'content-type: application/json'
+
+Click `Try It!` to start a request and see the response here! Or choose an example:
+
+application/json
+
+201400
+
